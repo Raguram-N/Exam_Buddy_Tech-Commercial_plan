@@ -27,10 +27,10 @@ Deliver scalable AI learning at low cost per student.
 User (Voice/Text)
    ↓
 API Gateway (FastAPI)
-   ↓
-Intent Router
-   ↓
+     ↓
 STT (Whisper if voice input)
+   ↓
+Intent Router (decides - Cache / RAG / LLM / Fallback)
    ↓
 RAG System (Vector DB retrieval)
    ↓
